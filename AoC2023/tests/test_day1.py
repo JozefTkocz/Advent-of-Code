@@ -50,7 +50,7 @@ def test_sum_calibration_doc_with_strings():
         ("sevenine", "7eve9ine"),
     ],
 )
-def test_replace_substrings_with_numbers(test_input, expected):
+def test_replace_first_letters_of_number_words_with_ints(test_input, expected):
     assert replace_first_letters_of_number_words_with_ints(test_input) == expected
 
 
@@ -66,5 +66,5 @@ def test_replace_substrings_with_numbers(test_input, expected):
         ("7pqrstsixteen", 76),
     ],
 )
-def test_get_line_value_ints_or_strings(test_input, expected):
+def test_first_and_last_ints_or_words(test_input, expected):
     assert first_and_last_ints_or_words(test_input) == expected
