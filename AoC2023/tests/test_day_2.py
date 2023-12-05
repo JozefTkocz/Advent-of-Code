@@ -94,4 +94,4 @@ def test_example_input_pt_2():
         Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green"""
 
     games_list = parse_input(input_text)
-    assert evaluate_part_2(games_list, {"red": 12, "green": 13, "blue": 14}) == 2286
+    assert evaluate_part_2(games_list) == 2286
